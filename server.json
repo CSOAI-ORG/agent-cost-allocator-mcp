@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/agent-cost-allocator-mcp",
+  "version": "1.0.0",
+  "description": "Agent Cost Allocator MCP — multi-tenant LLM cost attribution for chargeback billing. Companion to agent-token-budget-mcp. Signed tenant chargeback summaries. By MEOK AI Labs.",
+  "repository": { "url": "https://github.com/CSOAI-ORG/agent-cost-allocator-mcp", "source": "github" },
+  "packages": [{ "registryType": "pypi", "identifier": "agent-cost-allocator-mcp", "version": "1.0.0", "runtimeHint": "python", "transport": { "type": "stdio" } }],
+  "remotes": [{ "type": "streamable-http", "url": "https://api.meok.ai/v1/a2a/agent-cost-allocator" }]
+}
