@@ -1,64 +1,78 @@
 # Agent Cost Allocator MCP
 
-> ## 🧱 Part of the MEOK A2A Substrate (£499/mo)
-> See [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/agent_cost_allocator_mcp/)
 
-# Multi-tenant LLM cost attribution for chargeback billing
+>  Multi-tenant LLM cost attribution for chargeback billing
 
-<!-- mcp-name: io.github.CSOAI-ORG/agent-cost-allocator-mcp -->
+ Multi-tenant LLM cost attribution for chargeback billing
 
-[![PyPI](https://img.shields.io/pypi/v/agent-cost-allocator-mcp)](https://pypi.org/project/agent-cost-allocator-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## The product
+## 🚀 Quick Start
 
-Splits one agent's spend across many tenants for chargeback billing. Without cost attribution, agentic SaaS providers can't bill customer A for £X and customer B for £Y based on real LLM usage. This MCP solves that with a signed per-tenant ledger.
+```bash
+# Install via pip
+pip install agent_cost_allocator_mcp
 
-Companion to `agent-token-budget-mcp` (per-session caps) — that MCP stops spending, this one attributes it back.
+# Or install via Smithery
+npx -y @smithery/cli@latest install agent-cost-allocator-mcp --client claude
+```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|---|---|
-| `open_ledger(ledger_id?, currency, period_label?)` | New monthly ledger |
-| `record_charge(ledger_id, tenant_id, model, input/output_tokens, product_code?)` | Record one billable call |
-| `tenant_chargeback_summary(ledger_id, tenant_id)` | Signed invoice-ready summary |
-| `full_ledger_summary(ledger_id)` | Grand total + tenant ranking |
-| `product_breakdown(ledger_id, product_code)` | Per-product COGS across all tenants |
-| `list_ledgers()` | All open ledgers |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Use cases
+## 📖 Documentation
 
-- **Multi-tenant agent SaaS** — bill customer-level usage
-- **Internal IT cross-charging** across departments
-- **Reseller white-label** — split MEOK gateway costs across resellers' customers
-- **Customer support COGS** — "agent used £X across N tickets for customer Y"
-- **Per-product economics** — "compliance-scan costs us £0.04/call, sells for £0.50, gross margin 92%"
+- [Full Documentation](https://docs.meok.ai/agent-cost-allocator-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Sister MCPs
+## 🛡️ Compliance
 
-Part of the MEOK **A2A** pack:
+This MCP server is built with **EU AI Act compliance** built-in:
 
-- `agent-token-budget-mcp` — caps spend per session
-- `bft-progress-council-mcp` — halts loops
-- `agent-rate-limiter-mcp` — throttle calls
-- `agent-audit-logger-mcp` — hash-chained log
-- `agent-commerce-protocol-mcp` — Stripe ACP for invoicing the chargebacks
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Protocol coverage + Universal PAYG
+## 🏢 Enterprise
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| A2A Substrate | £499/mo |
-| Universe | £1,499/mo |
-| Defence | £4,990/mo |
+Need custom development, SLA guarantees, or white-label deployment?
 
-Buy: https://meok.ai/a2a
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-## Licence
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
