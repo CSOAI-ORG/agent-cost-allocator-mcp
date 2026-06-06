@@ -1,33 +1,22 @@
-# Agent Cost Allocator MCP
+# agent-cost-allocator-mcp
 
-> Multi-tenant LLM cost attribution for chargeback billing
+> Agent Cost Allocator MCP — multi-tenant LLM cost attribution for chargeback billing. Companion to agent-token-budget. Splits one agent's spend across many tenants for invoicing. By MEOK AI Labs.
 
-`agent-cost-allocator-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- open_ledger
+- record_charge
+- tenant_chargeback_summary
+- full_ledger_summary
+- product_breakdown
+- list_ledgers
 
 ## Install
-
-```bash
+```
 pip install agent-cost-allocator-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx agent-cost-allocator-mcp
-```
-
-## Tools
-
-- `open_ledger`
-- `record_charge`
-- `tenant_chargeback_summary`
-- `full_ledger_summary`
-- `product_breakdown`
-- `list_ledgers` — List all open ledger IDs + period labels.
-
 ## Links
-
-- Source: https://github.com/CSOAI-ORG/agent-cost-allocator-mcp
 - PyPI: https://pypi.org/project/agent-cost-allocator-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+- Docs: https://meok.ai

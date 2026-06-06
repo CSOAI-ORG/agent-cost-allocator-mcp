@@ -1,0 +1,19 @@
+name: agent-cost-allocator-mcp
+description: "> ## 🧱 Part of the MEOK A2A Substrate (£499/mo)"
+version: 1.0.0
+author: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/MEOK-AI-Labs/agent-cost-allocator-mcp
+license: MIT
+categories:
+  - compliance
+  - ai
+  - governance
+
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+    - fastapi
+    - uvicorn
+    - mcp

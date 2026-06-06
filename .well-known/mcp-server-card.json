@@ -1,0 +1,31 @@
+{
+  "name": "agent-cost-allocator-mcp",
+  "title": "Agent Cost Allocator Mcp",
+  "description": "Agent Cost Allocator MCP \u2014 multi-tenant LLM cost attribution for chargeback billing. Companion to agent-token-budget. Splits one agent's spend across many tenants for invoicing. By MEOK AI Labs.",
+  "version": "1.0.1",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "open_ledger"
+    },
+    {
+      "name": "record_charge"
+    },
+    {
+      "name": "tenant_chargeback_summary"
+    },
+    {
+      "name": "full_ledger_summary"
+    },
+    {
+      "name": "product_breakdown"
+    },
+    {
+      "name": "list_ledgers"
+    }
+  ]
+}

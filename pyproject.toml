@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agent-cost-allocator-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "Agent Cost Allocator MCP — multi-tenant LLM cost attribution for chargeback billing. Companion to agent-token-budget. Splits one agent's spend across many tenants for invoicing. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
