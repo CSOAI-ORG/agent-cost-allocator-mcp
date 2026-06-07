@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "agent-cost-allocator-mcp",
+    "description": "Agent Cost Allocator MCP \u2014 multi-tenant LLM cost attribution for chargeback billing. Companion to",
+    "version": "1.0.1",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "agent-cost-allocator-mcp"
+      }
+    ],
+    "capabilities": [
+      "open_ledger",
+      "record_charge",
+      "tenant_chargeback_summary",
+      "full_ledger_summary",
+      "product_breakdown",
+      "list_ledgers"
+    ]
+  }
+}
