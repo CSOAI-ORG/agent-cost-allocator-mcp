@@ -1,0 +1,128 @@
+{
+  "name": "Agent Cost Allocator Mcp",
+  "version": "1.0.1",
+  "url": "https://mcp.meok.ai/agent-cost-allocator-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Agent Cost Allocator MCP — multi-tenant LLM cost attribution for chargeback billing. Companion to agent-token-budget. Splits one agent's spend across many tenants for invoicing. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "open_ledger",
+      "name": "Open Ledger",
+      "description": "Open Ledger — a tool of the agent-cost-allocator-mcp MCP.",
+      "tags": [
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "record_charge",
+      "name": "Record Charge",
+      "description": "Record Charge — a tool of the agent-cost-allocator-mcp MCP.",
+      "tags": [
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "tenant_chargeback_summary",
+      "name": "Tenant Chargeback Summary",
+      "description": "Tenant Chargeback Summary — a tool of the agent-cost-allocator-mcp MCP.",
+      "tags": [
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "full_ledger_summary",
+      "name": "Full Ledger Summary",
+      "description": "Full Ledger Summary — a tool of the agent-cost-allocator-mcp MCP.",
+      "tags": [
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "product_breakdown",
+      "name": "Product Breakdown",
+      "description": "Product Breakdown — a tool of the agent-cost-allocator-mcp MCP.",
+      "tags": [
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_ledgers",
+      "name": "List Ledgers",
+      "description": "List Ledgers — a tool of the agent-cost-allocator-mcp MCP.",
+      "tags": [
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "agent-cost-allocator-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
