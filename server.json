@@ -2,10 +2,11 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/agent-cost-allocator-mcp",
   "version": "1.0.4",
-  "description": "Agent Cost Allocator MCP — multi-tenant LLM cost attribution for chargeback billing. Companion to",
+  "description": "Agent Cost Allocator MCP \u2014 multi-tenant LLM cost attribution for chargeback billing. Companion to",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/agent-cost-allocator-mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1245564748"
   },
   "packages": [
     {
