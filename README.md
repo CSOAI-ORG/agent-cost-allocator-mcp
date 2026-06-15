@@ -121,3 +121,8 @@ Once configured, ask your assistant, for example:
 - "Use `open_ledger` to …"
 - "Use `record_charge` to …"
 - "Use `tenant_chargeback_summary` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`agent-commerce-protocol-mcp`](https://github.com/CSOAI-ORG/agent-commerce-protocol-mcp), [`agent-identity-trust-mcp`](https://github.com/CSOAI-ORG/agent-identity-trust-mcp), [`agent-orchestrator-mcp`](https://github.com/CSOAI-ORG/agent-orchestrator-mcp), [`agent-replay-debugger-mcp`](https://github.com/CSOAI-ORG/agent-replay-debugger-mcp), [`agent-x402-paywall-mcp`](https://github.com/CSOAI-ORG/agent-x402-paywall-mcp)
